@@ -1,0 +1,51 @@
+# ── Web framework ────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9       # required by FastAPI for Form / UploadFile
+
+# ── Configuration ────────────────────────────────────────────────────────────
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# ── LLM provider ─────────────────────────────────────────────────────────────
+mistralai>=0.4.0
+
+# ── Local embeddings ─────────────────────────────────────────────────────────
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+
+# ── Chunking / tokenisation ───────────────────────────────────────────────────
+tiktoken>=0.7.0
+
+# ── Document parsers ─────────────────────────────────────────────────────────
+pypdf>=4.2.0
+python-pptx>=0.6.23
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# ── YouTube captions (primary path) ──────────────────────────────────────────
+# Pin to >=1.0.0 to get the instance-based API used in parsers.py.
+# VideoUnplayable was introduced in 0.6.x and is present in all 1.x releases.
+youtube-transcript-api>=1.0.0
+
+# ── YouTube audio fallback (Whisper pipeline) ────────────────────────────────
+# Both are optional at import time — the app starts fine without them, but
+# the Whisper fallback will raise a clear error if they are missing.
+#
+# System dependency: ffmpeg must also be on PATH for yt-dlp post-processing.
+# Install it via:
+#   Windows  : winget install ffmpeg   OR  choco install ffmpeg
+#   macOS    : brew install ffmpeg
+#   Linux    : sudo apt install ffmpeg
+yt-dlp>=2024.5.1
+faster-whisper>=1.0.0
+
+openai-whisper
+pydub
+yt-dlp
+ 
+# System dependency (not pip-installable): ffmpeg
+# Ubuntu/Debian: sudo apt install ffmpeg
+# macOS:         brew install ffmpeg
+# Windows:       https://ffmpeg.org/download.html (add to PATH)
+ 
