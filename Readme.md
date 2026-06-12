@@ -2,7 +2,7 @@
 
 🚀 A powerful full-stack AI learning platform that ingests **PDFs, PPTX slides, YouTube videos, and webpages**, indexes them with semantic embeddings, and answers questions **strictly grounded** in that content — with intelligent citations, real-time streaming responses, and interactive quiz generation.
 
----
+-----
 
 ## ✨ Key Features
 
