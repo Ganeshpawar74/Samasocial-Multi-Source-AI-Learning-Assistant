@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import json
 from typing import AsyncGenerator
-
 from mistralai.async_client import MistralAsyncClient
 from mistralai.models.chat_completion import ChatMessage as MistralChatMessage
 
